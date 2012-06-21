@@ -1,4 +1,14 @@
-<?php
+<!DOCTYPE html>
+<html>
+    <body>
+    <div id="menu">
+    </div>
+    </body>
+</html>
+
+    <?php
+
+/*
 	echo '<div id="menu">
                         <ul>
 							<li class="nivel1 primera" tabindex="1"><a href="formularioventa.php">Inicio</a>
@@ -31,4 +41,6 @@
                             </li>
                         </ul>
                 </div>';
-?>
+*/
+  ?>
+ 

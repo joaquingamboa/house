@@ -7,12 +7,20 @@ background-image:url('../images/fondo.jpg');
 	margin-left:22px;
 
 }
+
+#right_container{
+    width:1017px;
+    height:499px;
+    border:1px solid black;
+    float:left;
+}
+
 #header{
 	width:1300px;
 	height:100px;
 	background-image:url(../images/banner3.jpg);
 	-moz-border-radius: 10px;
-    -webkit-border-radius: 10px;  
+        -webkit-border-radius: 10px;  
 }
 
 /*MENU*/
@@ -21,8 +29,7 @@ background-image:url('../images/fondo.jpg');
 	width:280px;
 	height:500px;
 	-moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-	
+        -webkit-border-radius: 10px;
 	float:left;  
 }
 #menu ul li.nivel1 { 
@@ -98,7 +105,7 @@ position: relative;width: 160px;border: solid 1px #fff;border-top: none;backgrou
 	text-align: justify; 
 }
 #contenido p{
-	padding:25px 50px 0px 50px;
+	padding:15px 50px 0px 50px;
 }
 #footer{
 	height:25px;
