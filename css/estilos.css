@@ -1,0 +1,231 @@
+﻿body{
+background-image:url('../images/fondo.jpg');
+}
+#contenedor{
+	width:1266px;
+	height:620px;
+	margin-left:22px;
+
+}
+#header{
+	width:1300px;
+	height:100px;
+	background-image:url(../images/banner3.jpg);
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;  
+}
+
+/*MENU*/
+#menu{
+	margin-top:40px;
+	width:280px;
+	height:500px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	
+	float:left;  
+}
+#menu ul li.nivel1 { 
+width: 210px;
+}
+#menu ul li.primera { 
+	border-top: solid 1px #FFF;
+}
+#menu ul li a, #menu ul li span {display: block;
+text-decoration: none;
+color: #fff;
+background-color: #399;
+border: solid 1px #fff;
+border-top: none;
+padding: 8px;
+position: relative;
+}
+a:active {position: relative;
+}
+#menu ul li a:active {background-color: #6CC;
+color: #000;
+border-bottom: solid 1px #6CC;
+position: relative;
+}
+#menu ul li span.nivel1 {display: block;
+}
+#menu ul li:hover span.nivel1 {cursor: pointer;}
+#menu ul li ul {display: none;
+}
+#menu ul li a:hover ul, #menu ul li a:active ul {display: block;
+position: relative;width: 162px;background-color: #6CC;
+}
+#menu ul li a:link:hover ul {display: none;
+}
+/**/
+#menu ul li a:active:hover ul  {display: block;
+}
+#menu ul li ul li a {width: 190px;
+padding: 6px 0px 8px 0px;
+border: none;
+border-top:  solid 1px #fff;
+background-color: #3AB7CB;
+font-weight: normal;
+}
+#menu ul li ul li a:hover {
+position: relative;
+text-decoration: underline;
+border-bottom: none;
+color: #000;
+background-color: #359BB8;
+}
+#menu ul li ul li.primera {border-top: none;
+}
+table.falsa {border-collapse:collapse;
+border:0px;
+float: left;
+position: relative;
+}
+/*inicio*/
+#menu ul li:focus ul, #menu ul li:active ul, #menu ul li a:active ul {display: block;
+position: relative;width: 160px;border: solid 1px #fff;border-top: none;background-color: #6CC;}
+#menu ul li:focus span, #menu ul li:active span, #menu ul li a:active {background-color: #6CC;border-bottom: solid 1px #6CC;color: #000;border-left: solid 8px #359BB8;border-right: solid 8px #359BB8;
+}
+/***************/
+#contenido{
+	margin-top:10px;
+	width:1300px;
+	height:500px;	
+	background-color:#CCCCCC;
+	float:left;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	text-align: justify; 
+}
+#contenido p{
+	padding:25px 50px 0px 50px;
+}
+#footer{
+	height:25px;
+	width:1299px;
+	background-color:#CCCCCC;
+	float:left;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin-top:10px;
+}
+#footer{
+	margin-bottom:-10px;
+}
+#contacto{
+float:right;
+padding-right:30px;
+padding-top:2px;
+}
+#direccion{
+float:left;
+padding-left:20px;
+padding-top:2px;
+}
+
+/* menÃº bodega,venta,gestiÃ³n */
+#titulo{
+	color:#3399FF;
+	font-size:25px;
+	text-align:center;
+}
+#imghome{
+	text-align:center;	
+}
+
+#subtitulo{
+	color:#3399FF;
+	font-size:19px;
+	text-align:center;
+	padding-bottom:0px;
+
+}
+#centro{
+ 	margin:70px 0px 0px 300px;
+}
+#center{
+	margin:0px 0px 0px 150px;
+}
+#centertab{
+	margin:25px 0px 0px 300px;
+
+}
+
+.txtpass{
+	width:5px;
+}
+#tablogin{
+	padding-top:50px;
+}
+
+#tabproducto{
+	padding-top:0px;
+}
+#login-box{
+	width:380px;
+	height:260px;
+	margin: 100px auto 0px;
+	border-radius:5px;
+}
+#login-box-interno{
+	width:360px;
+	height:240px;
+	background-color:#fdfdfd;
+	position:absolute;
+	margin:10px;
+	border-radius:5px;
+	box-shadow:0px 0px 5px black;
+	overflow:hidden;
+}
+
+#login-box-label{
+	
+	height:35px;
+	text-align:center;
+	font: bold 14px/45px sans-serif;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border:1px solid #bfc3c5;
+
+}
+
+.input-div{
+	margin:20px;
+	padding:7px;
+	background-color:#f2f5f7;
+	border-radius:3px;
+}
+
+.input-div input{
+	width:180px;
+	height:30px;
+	padding-left:5px;
+	font: normal 13px sans-serif;
+	color:#aeaeae;
+	border-radius:5px;
+	border: 1px solid #bfc4c6;
+	outline:none;
+}
+.input-div:hover{
+	background-color:#e0f1fc;
+}
+.input-div:hover input{
+	border-color:#7d6cdd;
+}
+.input-boton{
+	margin-left:120px;
+}
+.bodegafoto{
+	margin-top:10px;
+	margin-left:50px;
+}
+.ventafoto{
+	margin-top:10px;
+	margin-left:50px;
+	width:800px;
+	height:450px;
+}
+li{
+	list-style:none;
+	margin-left:-25px;
+}
