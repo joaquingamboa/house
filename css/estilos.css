@@ -2,16 +2,77 @@
 background-image:url('../images/fondo.jpg');
 }
 #contenedor{
-	width:1266px;
-	height:620px;
+	width:1300px;
+	height:675px;
 	margin-left:22px;
+}
 
+/*  Tablas   */
+
+/*tr:hover	{
+	background-color:#F0FFE6;
+}*/
+
+.listado{	/* estilo para los listados generados en tablas*/
+	background-color: #F0ECD0;
+	border: none;
+	font-family: verdana, monospace;
+	font-size: xx-small;
+	width: 100%;
+}
+
+.listado tr:hover	{
+	background-color: #B5B5B5;
+}
+
+.listado th{
+	background-color: #E3DBA4;
+}
+
+/*       */
+
+.error{ 
+    color: red;
+    font-weight: bold;
+    position: absolute;
+}
+
+#dir{
+width:50%;
+height:200px;
+margin-top:-10px;
+float:left;
+border-right:1px solid black;
+}
+
+#tableDir{
+    margin-top:5px;
+    margin-left:5px;
+    border-collapse:collapse;
+}
+#tableDir1{
+    margin-top:5px;
+    border-collapse:collapse;
+    font-size: 12px;
+}
+
+#tableCliente tr{
+    text-align:right;
+}
+
+#tableDir1 tr{
+    text-align:left;
+}
+
+
+#tableDir th, #tableDir td{
+    border:1px solid black;
 }
 
 #right_container{
-    width:1017px;
-    height:499px;
-    border:1px solid black;
+    width:1077px;
+    height:520px;
+   /* border:1px solid black;*/
     float:left;
 }
 
@@ -25,15 +86,14 @@ background-image:url('../images/fondo.jpg');
 
 /*MENU*/
 #menu{
-	margin-top:40px;
-	width:280px;
-	height:500px;
+	width:220px;
+	height:520px;
 	-moz-border-radius: 10px;
         -webkit-border-radius: 10px;
 	float:left;  
 }
 #menu ul li.nivel1 { 
-width: 210px;
+width: 190px;
 }
 #menu ul li.primera { 
 	border-top: solid 1px #FFF;
@@ -73,6 +133,7 @@ border: none;
 border-top:  solid 1px #fff;
 background-color: #3AB7CB;
 font-weight: normal;
+margin-left: -10px;
 }
 #menu ul li ul li a:hover {
 position: relative;
@@ -97,7 +158,7 @@ position: relative;width: 160px;border: solid 1px #fff;border-top: none;backgrou
 #contenido{
 	margin-top:10px;
 	width:1300px;
-	height:500px;	
+	height:522px;	
 	background-color:#CCCCCC;
 	float:left;
 	-moz-border-radius: 10px;
@@ -108,17 +169,33 @@ position: relative;width: 160px;border: solid 1px #fff;border-top: none;backgrou
 	padding:15px 50px 0px 50px;
 }
 #footer{
+        margin-top:10px;
 	height:25px;
 	width:1299px;
 	background-color:#CCCCCC;
 	float:left;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	margin-top:10px;
+
 }
 #footer{
 	margin-bottom:-10px;
 }
+
+#TableCliente{
+    margin-left:5px;
+    margin-right:auto;
+    margin-top:5px;
+    font-size: 12px;
+    float:left;
+}
+
+
+#FN{
+border:1px solid #928F8D;
+}
+
+
 #contacto{
 float:right;
 padding-right:30px;

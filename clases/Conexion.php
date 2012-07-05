@@ -1,27 +1,40 @@
 <?php
-class Conexion {
-    var $host = '';
-    var $user = '';
-    var $pwd = '';
-    var $data = '';
-    var $cnx = NULL;
-    function __construct(){
-       $this->host = 'localhost';
-       $this->user = 'root';
-       $this->pwd = '';
-       $this->data = 'house';   
-    }//end construct   
-    function MET_conectar(){   
-       $this->cnx = mysql_connect($this->host,$this->user,$this->pwd);//conectar a la base
-       if(!$this->cnx){//validacion de conexion
-         echo "Error ".mysql_errno().": ".mysql_error();
-         exit;
-       }//endif
-       if(!mysql_select_db($this->data,$this->cnx)){//seleccionar la base de datos activa
-         echo "Error ".mysql_errno().": ".mysql_error();
-         exit;
-       }//endif
-       //echo "Exito en la Conexion";
-    }//end function
-   }//end class 
+class Conexion{
+ private $servidor="localhost";
+ private $username="root";	
+ private $password="";
+ private $dbname="house";
+ private $con=null;
+ 
+ 
+ public function abrir(){
+ $this->con=mysql_connect($this->servidor,$this->username,$this->password);
+ mysql_select_db($this->dbname);
+ }
+ 
+  
+ public function cerrar(){
+  if($this->con){
+	  mysql_close($this->con);
+	  $this->con=null;
+ }
+}
+ 
+ public function query($sql){
+	$this->abrir();
+	$datos=null;
+	$datos=mysql_query($sql);
+	$this->cerrar();
+	return $datos; 
+ }
+
+ public function num_rows($sql){
+     $this->abrir();
+     $datos=null;
+     $datos=mysql_num_rows($sql);
+     $this->cerrar();
+     return $datos;
+ }
+}
+
 ?>

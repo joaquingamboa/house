@@ -1,6 +1,6 @@
 <?php
 
-require_once('classConexion.php');
+require_once('Conexion.php');
     class Query extends Conexion{
        var $sql       = NULL;
        var $msj_query    = NULL;
@@ -25,7 +25,8 @@ require_once('classConexion.php');
        }//end fucntion
        
        
-       function MET_select(){
+       function MET_select($sql){
+         $this->sql = $sql;
          $this->result = mysql_query($this->sql, $this->cnx);
          if(!$this->result){//Evaluar Sintaxis Sql
             $this->msj_query = "Error ".mysql_errno().": ".mysql_error();

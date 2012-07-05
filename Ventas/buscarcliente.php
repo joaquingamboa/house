@@ -3,6 +3,8 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Ventas</title>
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.Rut.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
 </head>
 
@@ -10,20 +12,21 @@
 	<div id="contenedor"> 
         	<div id="header">            
         	</div> 
-            
-            
-
-           
-            
+         
             <div id="contenido">
                 <?php include("menu.php"); ?>
                 
                 <div id="right_container">
-                   
                     <div style="height:50px;background-color:#999;">
                     <p style="text-align:center;font-weight:bold;">Buscar Cliente</p>
-                    </div>
+                    </div>    
                     
+                       <table>
+                           <tr><td></td><td></td></tr>   
+                          
+                           
+                       </table>
+                       
                     
                 </div>
 		
